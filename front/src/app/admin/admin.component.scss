@@ -1,0 +1,27 @@
+.admin{margin-left: 19%;margin-top: -16%;}
+.admin-container{
+    background-color: rgb(12, 12, 12);
+    border-bottom-left-radius: 70px;
+    width: 95%;
+    padding: 77px;
+    padding-bottom: 80px !important;
+}
+.admin-tab{
+    background-color: white;
+    padding: 79px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 95px;
+    width: 100%;
+    border-radius: 2px;
+    border-bottom-left-radius: 70px;
+
+}
+ul li{float: left;cursor: pointer;}
+.viewRequest{display: none}
+.btn{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    outline: none;
+}

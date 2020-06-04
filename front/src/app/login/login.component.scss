@@ -1,0 +1,30 @@
+.login{margin-left: 19%;margin-top: -16%;}
+.login-container{
+    background-color: rgb(12, 12, 12);
+    border-bottom-left-radius: 70px;
+    width: 95%;
+    padding: 77px;
+    padding-bottom: 80px !important;
+}
+.login-form{
+    background: rgba(255, 255, 255,0);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    z-index: 999999;
+    padding: 79px;
+    margin-top: 9%;
+    margin-left: 27%;
+    margin-bottom: 95px;
+    width: 50%;
+    border-radius: 2px;
+    border-bottom-left-radius: 70px;
+
+}
+button{
+    background-color: transparent;
+    border: 1px solid white !important;
+    outline: none;
+    width: 55%;
+    margin-left: 12%;
+}
+input{outline: none;margin-left:-57%;}
+.fa-envelope-o,.fa-unlock-alt{font-size: 21px;}

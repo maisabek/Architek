@@ -1,0 +1,70 @@
+<div class="admin">
+    <div class="admin-container">
+        <div class="admin-tab">
+            <ul class="list-unstyled">
+              <li data-class="viewUser" class="selected">View User</li>
+                <li data-class="viewRequest" class="ml-5" >View Requests</li>
+                <div class="clearfix"></div>
+            </ul>
+            <div class="viewRequest mt-4">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="viewUser mt-4">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> name</th>
+                        <th scope="col">email</th>
+                        <th scope="col">password</th>
+                        <th scope="col">action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let u of userContainer; let i=index">
+                        <th scope="row">{{i + 1}}</th>
+                        <td>{{u.name}}</td>
+                        <td>{{u.email}}</td>
+                        <td>{{u.password}}</td>
+                        <td>
+                         <a [routerLink]="['/update',u.email]"><button class="btn">Update</button></a>
+                          <button class="btn ml-2" (click)="deleteTutorial(u.email)">Delete</button>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        
+    </div>
+</div>

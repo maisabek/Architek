@@ -1,0 +1,38 @@
+<div class="login">
+   <div class="login-container">
+           <div class="login-form">
+               <form [formGroup]='contactsForm'>
+                   <h5 class="mb-5 text-light">Login</h5>
+                   <div>
+                       <div class="float-left">
+                       <i class="fa fa-envelope-o text-light" aria-hidden="true"></i></div>
+                      <div class="float-right">
+                       <input type="email" placeholder="Enter Email" class="p-1 w-100 rounded" [(ngModel)]='email' required formControlName='email'>
+                   </div>
+                   <div class="clearfix"></div>
+
+                </div>
+                   <div class="mt-4 mb-4">
+                    <div class="float-left">
+                        <i class="fa fa-unlock-alt text-light" aria-hidden="true"></i>
+                    </div>
+                       <div class="float-right">
+                        <input type="password" placeholder="Enter password" class="p-1 w-100 rounded" [(ngModel)]='pass' required formControlName='password'>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div >
+                    <button type="submit" [disabled]='contactsForm.invalid' class="border-0  p-1 text-light rounded" (click)='registeredUser()'>Login</button>
+                </div>
+
+               </form>
+           </div>
+
+   </div>
+
+
+
+
+
+
+    </div>

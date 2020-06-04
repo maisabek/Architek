@@ -1,0 +1,27 @@
+.contact{margin-left: 19%;margin-top: -16%;}
+.contact-container{
+    background-color: rgb(12, 12, 12);
+    border-bottom-left-radius: 90px;
+    width: 95%;
+    padding: 77px;
+    padding-bottom: 80px !important;
+}
+.header{
+    background: url(src/assets/images/11.jpeg) fixed;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+}
+h3{margin-top: 10%;margin-left: 45%;}
+p{margin-left: 41%;}
+button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
+input,textarea{outline: none;}
